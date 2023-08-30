@@ -1,19 +1,16 @@
-public class Main{
+class A {
+    int m = 3;
+    void print() {
+        System.out.println("객체 생성 및 활용");
+    }
+}
+public class Main {
     public static void main(String[] args) {
-        int a[][] = new int[2][];
-        a[0] = new int[2];
-        a[0][0] = 1;
-        a[0][1] = 2;
+        A a = new A();
 
-        a[1] = new int[3];
-        a[1][0] = 3;
-        a[1][1] = 4;
-        a[1][2] = 5;
+        a.m = 5;
+        System.out.println(a.m);
 
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a[i].length; j++) {
-                System.out.println(a[i][j]);
-            }
-        }
+        a.print();
     }
 }
