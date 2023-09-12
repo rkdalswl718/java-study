@@ -1,16 +1,17 @@
-class A {
-    int m = 3;
-    void print() {
-        System.out.println("객체 생성 및 활용");
-    }
-}
 public class Main {
-    public static void main(String[] args) {
-        A a = new A();
+    public class A {
 
-        a.m = 5;
-        System.out.println(a.m);
+        void printf() {
+            System.out.println("안녕");
+        }
 
-        a.print();
+        public int main() { // 메인 메서드는 int 형식을 반환해야 합니다.
+            return 3;
+        }
+
+        public double addNumbers(int a, double b) {
+            double sum = a + b;
+            return sum;
+        }
     }
 }
